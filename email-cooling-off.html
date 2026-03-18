@@ -51,7 +51,7 @@
 <body style="margin: 0; padding: 0; background-color: #2F3020; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
   <!-- Preheader -->
   <span style="display: none; font-size: 1px; line-height: 1px; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all;">
-    Your cooling-off period details and cancellation rights for your recent investment.
+    Thank you for registering. Your 24-hour cooling-off period has started — we'll let you know when your account is active.
   </span>
 
   <!-- Outer wrapper -->
@@ -65,7 +65,7 @@
           <!-- Header -->
           <tr>
             <td style="background-color: #12120D; padding: 20px 40px; border-radius: 8px 8px 0 0;" class="content-padding">
-              <img src="{{logo_url}}" alt="PXN Investments" width="133" height="auto" style="display: block; border: 0; outline: none; text-decoration: none;">
+              <img src="{{logo_url}}" alt="PXN Investments" width="133" style="display: block; border: 0; outline: none; text-decoration: none;">
             </td>
           </tr>
 
@@ -77,14 +77,14 @@
                 <!-- Greeting -->
                 <tr>
                   <td style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 28px; font-weight: 700; color: #12120D; line-height: 1.2; letter-spacing: -0.48px; padding-bottom: 24px;">
-                    Dear {{first_name}}
+                    Hi {{first_name}}
                   </td>
                 </tr>
 
                 <!-- Body text -->
                 <tr>
                   <td style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; color: #12120d; line-height: 1.4; letter-spacing: -0.48px; padding-bottom: 32px;">
-                    Thank you for your recent investment. This email confirms the details of your cooling-off period as required by regulation.
+                    Thank you for completing your investor self-certification. As required by FCA regulation, there is a 24-hour cooling-off period before your account is activated and you can access restricted investment documentation.
                   </td>
                 </tr>
 
@@ -96,53 +96,33 @@
                         <td style="padding: 24px;">
                           <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
 
-                            <!-- Investment -->
+                            <!-- Investor category -->
                             <tr>
                               <td class="detail-label" width="45%" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #979864; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                Investment
+                                Investor category
                               </td>
                               <td class="detail-value" width="55%" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; color: #12120d; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                {{investment_name}}
+                                {{investor_category}}
                               </td>
                             </tr>
 
-                            <!-- Amount -->
+                            <!-- Registered -->
                             <tr>
                               <td class="detail-label" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #979864; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                Amount
+                                Registered
                               </td>
                               <td class="detail-value" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; color: #12120d; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                {{investment_amount}}
+                                {{registration_date}}
                               </td>
                             </tr>
 
-                            <!-- Date of investment -->
+                            <!-- Account active from -->
                             <tr>
                               <td class="detail-label" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #979864; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                Date of investment
-                              </td>
-                              <td class="detail-value" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; color: #12120d; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                {{investment_date}}
-                              </td>
-                            </tr>
-
-                            <!-- Cooling-off period ends -->
-                            <tr>
-                              <td class="detail-label" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #979864; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                Cooling-off period ends
+                                Account active from
                               </td>
                               <td class="detail-value" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; color: #12120d; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
                                 {{cooloff_end_date}}
-                              </td>
-                            </tr>
-
-                            <!-- Cancellation deadline -->
-                            <tr>
-                              <td class="detail-label" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 500; color: #979864; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                Cancellation deadline
-                              </td>
-                              <td class="detail-value" style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; color: #FBFEA7; line-height: 1.4; letter-spacing: -0.48px; padding: 8px 0; vertical-align: top;">
-                                {{cancellation_deadline}}
                               </td>
                             </tr>
 
@@ -156,7 +136,7 @@
                 <!-- Body paragraph -->
                 <tr>
                   <td style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; color: #12120d; line-height: 1.4; letter-spacing: -0.48px; padding-bottom: 32px;">
-                    During this period, you have the right to cancel your investment and receive a full refund. To exercise this right, please contact us before the cancellation deadline above.
+                    This cooling-off period is a regulatory requirement designed to give you time to consider your decision. Once it ends, you will receive a confirmation email and be able to sign in to access fund documentation, performance data, and application materials.
                   </td>
                 </tr>
 
@@ -164,13 +144,13 @@
                 <tr>
                   <td style="padding-bottom: 16px;" class="cta-button">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{investment_url}}" style="height:50px;v-text-anchor:middle;width:260px;" arcsize="12%" fillcolor="#FBFEA7" stroke="f">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{portal_url}}" style="height:50px;v-text-anchor:middle;width:260px;" arcsize="12%" fillcolor="#FBFEA7" stroke="f">
                       <w:anchorlock/>
-                      <center style="color:#12120D;font-family:Inter,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;">View Investment Details</center>
+                      <center style="color:#12120D;font-family:Inter,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;">Visit PXN Investments</center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <a href="{{investment_url}}" target="_blank" style="display: inline-block; background-color: #FBFEA7; color: #12120D; font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; text-decoration: none; padding: 16px 32px; border-radius: 6px; text-align: center;">View Investment Details</a>
+                    <a href="{{portal_url}}" target="_blank" style="display: inline-block; background-color: #FBFEA7; color: #12120D; font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 500; text-decoration: none; padding: 16px 32px; border-radius: 6px; text-align: center;">Visit PXN Investments</a>
                     <!--<![endif]-->
                   </td>
                 </tr>
@@ -178,7 +158,7 @@
                 <!-- Secondary text link -->
                 <tr>
                   <td style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; color: #12120d; line-height: 1.4; letter-spacing: -0.48px; padding-bottom: 32px;">
-                    Need to cancel? Contact us at <a href="mailto:{{support_email}}" style="color: #9EA06A; text-decoration: underline;">{{support_email}}</a>
+                    Changed your mind? Contact us at <a href="mailto:investors@pxngroup.co.uk" style="color: #9EA06A; text-decoration: underline;">investors@pxngroup.co.uk</a> or call 0161 250 3838
                   </td>
                 </tr>
 
@@ -208,14 +188,14 @@
                 <!-- Links -->
                 <tr>
                   <td style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; padding-bottom: 20px;">
-                    <a href="#" style="color: #FDFFDC; text-decoration: underline;">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="color: #FDFFDC; text-decoration: underline;">Terms of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="color: #FDFFDC; text-decoration: underline;">Contact Us</a>
+                    <a href="{{privacy_url}}" style="color: #FDFFDC; text-decoration: underline;">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{terms_url}}" style="color: #FDFFDC; text-decoration: underline;">Terms of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{contact_url}}" style="color: #FDFFDC; text-decoration: underline;">Contact Us</a>
                   </td>
                 </tr>
 
                 <!-- Legal disclaimer -->
                 <tr>
                   <td style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; color: #979864; line-height: 1.4; letter-spacing: -0.48px; padding-bottom: 20px;">
-                    Praetura Ventures Limited is authorised and regulated by the Financial Conduct Authority (FRN 817345). Praetura Investments is a trading name of Praetura Ventures Limited, a company registered in England and Wales, Company Registration Number 11439791.
+                    PXN Ventures and PXN Investments are trading names of Praetura Ventures Limited and Par Fund Management Limited. Praetura Ventures Limited is authorised and regulated by the Financial Conduct Authority (FRN: 817345). Registered in England and Wales, company number 08668345. Registered office: Bauhaus, Quay Street, Manchester M3 3GY. Par Fund Management Limited is authorised and regulated by the Financial Conduct Authority (FRN: 485668). Registered in Scotland, number SC301459. Registered office: 3 Dublin Meuse, Edinburgh EH3 6NW.
                   </td>
                 </tr>
                 <tr>
@@ -227,7 +207,7 @@
                 <!-- Copyright -->
                 <tr>
                   <td style="font-family: Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; color: #979864; line-height: 1.4; letter-spacing: -0.48px; padding-bottom: 12px;">
-                    &copy; 2025 PXN Group. All rights reserved.
+                    &copy; 2026 PXN Group. All rights reserved.
                   </td>
                 </tr>
 
